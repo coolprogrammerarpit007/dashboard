@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ************************************ */
+
+/* ****** End of Boiler-Plate ********** */
+/* *************************************** */
+
+/* ************************************* */
+/* ***** Color Palette ***************** */
+/* rgb(254, 253, 237) */
+/* rgb(198, 235, 197) */
+/* rgb(161, 195, 152) */
+/* rgb(250, 112, 112) */
+/* rgb(34, 40, 49) */
+/* rgb(49, 54, 63) */
+/* rgb(118, 171, 174) */
+/* rgb(238, 238, 238) */
+
+/* ************************************** */
+/* ************************************** */
+
+/* ***** Styling starts from here ****** */
+
+/* ************************************* */
+/* ***** Creating the grid layout ****** */
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 0.7fr 3fr;
+}
+
+.sidebar,
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 100vh;
+  color: grey;
+}
+
+.sidebar {
+  background-color: aquamarine;
+  grid-column: 1/2;
+}
+.section {
+  background-color: rgb(161, 195, 152);
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.header,
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: rgb(250, 112, 112);
+  padding: 8rem;
+}
+.projects {
+  background-color: rgb(161, 195, 152);
+}
