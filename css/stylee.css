@@ -30,6 +30,9 @@ body {
 /* rgb(49, 54, 63) */
 /* rgb(118, 171, 174) */
 /* rgb(238, 238, 238) */
+/* rgb(254, 185, 65) */
+/* rgb(221, 118, 28) */
+/* rgb(253, 228, 158) */
 
 /* ************************************** */
 /* ************************************** */
@@ -44,16 +47,6 @@ body {
   grid-template-columns: 0.7fr 3fr;
 }
 
-.sidebar,
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  height: 100vh;
-  color: grey;
-}
-
 .sidebar {
   background-color: aquamarine;
   grid-column: 1/2;
@@ -66,17 +59,151 @@ body {
   grid-template-rows: 1fr 3fr;
 }
 
-.header,
-.projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .header {
   background-color: rgb(250, 112, 112);
-  padding: 8rem;
 }
 .projects {
   background-color: rgb(161, 195, 152);
+}
+
+/* Layout Completion */
+/* ********************************* */
+/* ********************************* */
+
+/* ********************************* */
+/* Creating the dashboard design */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+  padding: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.logo-img {
+  width: 15%;
+  background-color: azure;
+  border-radius: 0.2rem;
+}
+
+.dashboard-title {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.home,
+.profile-people,
+.message,
+.history,
+.task,
+.communities {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile h3 {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.profile img {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.settings {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.setting,
+.privacy,
+.support {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.settings img {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.settings h3 {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+/* *********************************** */
+/* ************************************ */
+/* **** End of sidebar ******* */
+
+/* ************************************** */
+/* ************************************** */
+
+/* Styling of the header section */
+.top-header {
+  /* border: 1px solid green; */
+}
+
+.top-header img {
+  border-radius: 5rem;
+  width: 3%;
+  padding: 0.5rem;
+  background-color: rgb(254, 185, 65);
+}
+
+.profile-pic {
+  border: 1px solid goldenrod;
+  width: 10%;
+}
+.profile-pic {
+  width: 8%;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.top-header input {
+  border: none;
+  width: 40%;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.top-header input:focus {
+  outline: none;
+}
+
+.top-header h3 {
+  font-size: 2rem;
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
 }
